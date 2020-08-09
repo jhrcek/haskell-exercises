@@ -38,7 +38,7 @@ instance SomeClass Int
   actually need this extension explicitly.
 -}
 
--- instance SomeClass [Char]
+--instance SomeClass [Char]
 
 {-
   If you uncomment /this/ line, you'll see the error we saw with 'String' once
