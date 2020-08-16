@@ -1,15 +1,19 @@
-{-# LANGUAGE GADTs      #-}
+{-# LANGUAGE GADTs #-}
 {-# LANGUAGE RankNTypes #-}
 
-{- In Lou Bega's -} module {- number 5, we'll be discussing /higher rank
-polymorphism/ using the -} RankNTypes {- extension, and how a function can
-change entirely depending on -} where {- you put your quantifiers. -}
+{- In Lou Bega's -}
+{- number 5, we'll be discussing /higher rank
+polymorphism/ using the -} module RankNTypes {- extension, and how a function can
+                                             change entirely depending on -} where
 
 {-
+{- you put your quantifiers. -}
+
   Let's start things off with a function to wrap the values of a 'Tuple' in
   'Maybe' by applying them both to 'Just':
 -}
 
+wrapMaybe :: (a, b) -> (Maybe a, Maybe b)
 wrapMaybe (x, y) = (Just x, Just y)
 
 example :: (Maybe Int, Maybe String)
