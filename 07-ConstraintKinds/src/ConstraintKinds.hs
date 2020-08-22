@@ -1,6 +1,6 @@
 {-# LANGUAGE ConstraintKinds #-}
-{-# LANGUAGE GADTs #-}
-{-# LANGUAGE KindSignatures #-}
+{-# LANGUAGE GADTs           #-}
+{-# LANGUAGE KindSignatures  #-}
 
 {- Two of the -} module {- topics I found particularly difficult to place were
 -} ConstraintKinds {- and @PolyKinds@. I think as we explore concepts like
